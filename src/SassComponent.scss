@@ -1,5 +1,9 @@
 .SassComponent {
   display: flex;
+  background: $oc-gray-2;
+  @include media('<768px') {
+    background: $oc-red-9;
+  }
   .box {
     // .SassComponent .box 랑 같음
     background: red;
